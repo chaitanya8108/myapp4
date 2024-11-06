@@ -13,8 +13,10 @@ class App extends Component {
   };
 
   showMore = (mycid) => {
-    const selectedCourse = this.state.courses.find(course => course.cid === mycid);
-    this.setState({ selectedCourse : selectedCourse });
+    const selectedCourse = this.state.courses.find(
+      (course) => course.cid === mycid
+    );
+    this.setState({ selectedCourse: selectedCourse });
     // console.log("Selected Course:", selectedCourse);
   };
 
