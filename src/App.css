@@ -1,0 +1,214 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex-shrink: unset;
+  flex-grow: unset; */
+  flex-wrap: wrap;
+  padding-bottom: 4em;
+  margin-top: 1em;
+  /* margin-left: 20em;
+  margin-right: 20em; */
+  border: 1px solid black;
+  border-radius: 10px;
+  /* height: 50vh; */
+  width: 50vw;
+  box-shadow: 10px 10px 20px 0.1px;
+  background: whitesmoke;
+}
+
+table {
+  width: 50%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  line-height: 2.5em;
+  z-index: 100;
+  box-shadow: 5px 5px 20px 1px;
+  background: white;
+}
+
+tr,
+td,
+th {
+  border: 1px solid black;
+  user-select: none;
+}
+
+tr {
+  box-shadow: 1.5px 1.5px 3px 0.1px;
+}
+
+th {
+  color: white;
+  background-color: teal;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.mydata0 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  /* text-shadow: 1px 1px 3px black; */
+  /* box-shadow: 2px 2px 8px 0.5px; */
+}
+
+.mybtn1 {
+  color: white;
+  background-color: teal;
+  padding: 4px;
+  border: 2px solid rgb(11, 97, 97);
+  border-radius: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-shadow: 2px 2px 2.5px black;
+}
+
+.mybtn1:hover {
+  cursor: pointer;
+  background-color: rgb(115, 224, 224);
+  color: black;
+  text-shadow: 1.3px 1.3px 3px black;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 0.5em;
+  border: 0px;
+}
+@keyframes colorChange {
+  0% {
+    color: red;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+h1 {
+  font-family: cursive;
+  text-transform: capitalize;
+  text-decoration: underline;
+  animation: colorChange 1s ease-in-out infinite alternate-reverse;
+  user-select: none;
+}
+
+@media (max-width: 360px) {
+  table {
+    width: 100%;
+    /* max-width: 90%; */
+  }
+
+  h1 {
+    padding-bottom: 0.5em;
+  }
+
+  .App {
+    /* min-width: 100%; */
+    /* max-width: 100%; */
+    width: 90%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0px;
+    line-height: 1px;
+    margin-bottom: 1em;
+  }
+  .mybtn1 {
+    padding: 4px;
+  }
+  table {
+    line-height: 2.5em;
+    /* padding: 2em; */
+    box-shadow: 5px 5px 20px 1px;
+  }
+
+  .btns {
+    padding: 7px;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 768px) {
+  table {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  h1 {
+    padding-bottom: 0.5em;
+  }
+
+  .App {
+    /* min-width: 100%; */
+    /* max-width: 100%; */
+    width: 89vw;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0px;
+    line-height: 1px;
+    margin-bottom: 1em;
+  }
+  .mybtn1 {
+    padding: 4px;
+  }
+  table {
+    line-height: 2.5em;
+    /* padding: 2em; */
+    box-shadow: 5px 5px 20px 1px;
+  }
+
+  .btns {
+    padding: 7px;
+  }
+}
+
+/* @media (min-width: 700px) and (max-width: 1024px) {
+  table {
+    width: 100%;
+  }
+
+  .App {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+} */
+
+/* medium devices */
+@media (min-width: 768px) and (max-width: 1500px) {
+  table {
+    line-height: 2.5em;
+    /* padding: 2em; */
+    box-shadow: 5px 5px 20px 1px;
+    width: 100%;
+    max-width: 90%;
+  }
+
+  h1 {
+    padding-bottom: 0.5em;
+  }
+
+  .App {
+    /* min-width: 100%; */
+    width: 90vw;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0px;
+    line-height: 1px;
+    margin-bottom: 1em;
+    align-self: center;
+  }
+  .mybtn1 {
+    padding: 4px;
+  }
+
+  .btns {
+    padding: 7px;
+  }
+}
